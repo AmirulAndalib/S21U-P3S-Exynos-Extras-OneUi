@@ -68,8 +68,10 @@
 
 ## **Special thanks go to the following individuals for their contributions to this project:**
 
-### **[Andrei](https://forum.xda-developers.com/m/starbucks2010.2707699/) for the applock function.**
-### **[Fei-Ke](https://github.com/fei-ke) for creating the [CSC XML decoder](https://github.com/fei-ke/OmcTextDecoder).**
+### **[@Andrei](https://forum.xda-developers.com/m/starbucks2010.2707699/) for the applock function.**
+### **[@Fei-Ke](https://github.com/fei-ke) for creating the [CSC XML decoder](https://github.com/fei-ke/OmcTextDecoder).**
+### **[@m8980](https://forum.xda-developers.com/m/m8980.1614889/) for the module template.**
+### **[@exocetdj](https://forum.xda-developers.com/m/exocetdj.4366077/) for the [samsung NOTE20 Ultra port template](https://forum.xda-developers.com/t/root-reqd-magisk-module-exynos-oxm-csc-features.4160857/)**
 
 ---
 
