@@ -29,10 +29,17 @@ jobs:
           echo "::set-output name=new_version::${NEW_VERSION}"
           echo "::set-output name=new_version_code::${NEW_VERSION_CODE}"
 
+      - name: Get Commit SHA
+        id: commit_sha
+        run: |
+          COMMIT_SHA=$(git rev-parse --short=5 HEAD)
+          echo "::set-output name=commit_sha::${COMMIT_SHA}"
+
       - name: Update module.prop and update.json
         run: |
           new_version="${{ steps.version.outputs.new_version }}"
-          new_version_code="${{ steps.version.outputs.new_version_code }}"
+          commit_sha="${{ steps.commit_sha.outputs.commit_sha }}"
+          new_version_code="${commit_sha}"
           sed -i "s/version=.*/version=${new_version}/; s/versionCode=.*/versionCode=${new_version_code}/" magisk-module/module.prop
           jq --arg new_version "$new_version" '.version = $new_version' update.json > update.json.tmp
           jq --arg new_version_code "$new_version_code" '.versionCode = $new_version_code' update.json.tmp > update.json
