@@ -23,27 +23,11 @@ jobs:
         run: |
           CURRENT_DATETIME=$(TZ=$TZ date +'%d.%m.%Y.%H.%M')
           NEW_VERSION="v${CURRENT_DATETIME}"
+          NEW_VERSION_CODE=$(TZ=$TZ date +'%d%m%Y%H%M')
           echo "New Version: ${NEW_VERSION}"
+          echo "New Version Code: ${NEW_VERSION_CODE}"
           echo "::set-output name=new_version::${NEW_VERSION}"
-
-      - name: Update module.prop
-        run: |
-          new_version="${{ steps.version.outputs.new_version }}"
-          sed -i "s/version=.*/version=${new_version}/" magisk-module/module.prop
-
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git add magisk-module/module.prop
-          git commit -m "Bump version to ${{ steps.version.outputs.new_version }}"
-          git push
-
-      - name: Tagging
-        run: |
-          new_version="${{ steps.version.outputs.new_version }}"
-          git tag "${new_version}"
-          git push origin "${new_version}"
+          echo "::set-output name=new_version_code::${NEW_VERSION_CODE}"
 
       - name: Get Commit SHA
         id: commit_sha
@@ -51,13 +35,26 @@ jobs:
           COMMIT_SHA=$(git rev-parse --short=5 HEAD)
           echo "::set-output name=commit_sha::${COMMIT_SHA}"
 
-      - name: Update update.json with Commit SHA
+      - name: Update module.prop and update.json
         run: |
           new_version="${{ steps.version.outputs.new_version }}"
           commit_sha="${{ steps.commit_sha.outputs.commit_sha }}"
+          new_version_code="${commit_sha}"
+          sed -i "s/version=.*/version=${new_version}/; s/versionCode=.*/versionCode=${new_version_code}/" magisk-module/module.prop
+          jq --arg new_version "$new_version" '.version = $new_version' update.json > update.json.tmp
+          jq --arg new_version_code "$new_version_code" '.versionCode = $new_version_code' update.json.tmp > update.json
           zip_filename="S21U_p3s_csc_buildprop_magisk_module_${new_version}"
-          sed -i "s|\"versionCode\": \".*\"|\"versionCode\": \"${commit_sha}\",|" magisk-module/update.json
-          sed -i "s|\"zipUrl\": \".*\"|\"zipUrl\": \"https://github.com/AmirulAndalib/S21U-P3S-Exynos-Extras-OneUi/releases/download/${new_version}/${zip_filename}.zip\"|" magisk-module/update.json
+          sed -i "s|\"zipUrl\": \".*\"|\"zipUrl\": \"https://github.com/AmirulAndalib/S21U-P3S-Exynos-Extras-OneUi/releases/download/${new_version}/${zip_filename}.zip\"|" update.json
+
+          rm update.json.tmp
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add magisk-module/module.prop update.json
+          git commit -m "Bump version to ${{ steps.version.outputs.new_version }}"
+          git push
 
       - name: Zip Magisk Module
         run: |
@@ -69,6 +66,12 @@ jobs:
           zip -r "$zip_filename.zip" *
 
           ls -la && pwd
+
+      - name: Create Tag
+        run: |
+          new_version="${{ steps.version.outputs.new_version }}"
+          git tag "${new_version}"
+          git push origin "${new_version}"
 
       - uses: marvinpinto/action-automatic-releases@latest
         with:
