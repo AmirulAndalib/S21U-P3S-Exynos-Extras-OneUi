@@ -1,6 +1,3 @@
 [submodule "cscxmldecoder"]
     path = cscxmldecoder
-    url = ./cscxmldecoder
-[submodule "cscxmldecoder-github"]
-    path = cscxmldecoder
     url = https://github.com/fei-ke/OmcTextDecoder
