@@ -199,8 +199,6 @@ ro.netflix.bsp_rev=EXYNOS2100-34574-1
 com.samsung.speg.prelauncher.disable=true
 # Auto-added by post_process_props.py
 persist.sys.usb.config=mtp,conn_gadget,adb
-# end of file
-
 
 ##CUSTOM TWEAKS##
 fw.max_users=3
