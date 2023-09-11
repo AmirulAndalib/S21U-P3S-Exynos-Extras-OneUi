@@ -8,7 +8,7 @@
 
 ## **Download Magisk Module: [![GitHub release (with filter)](https://img.shields.io/github/v/release/amirulandalib/S21U-P3S-Exynos-Extras-OneUi)](https://github.com/AmirulAndalib/S21U-P3S-Exynos-Extras-OneUi/releases/latest "Magisk Module")**
 
-## **Supported Version: ![OneUI](https://img.shields.io/badge/OneUI-Stock%20--%20EWH5-red?labelColor=blue)**
+## **Supported Version: [![OneUI](https://img.shields.io/badge/OneUI-Stock%20--%20EWH5-red?labelColor=blue)](https://forum.xda-developers.com/t/ewh5-august-galaxy-s21-ultra-5g-official-firmware-sm-g998b-27th-august.4218529/#post-84296207 "stock EWH5 xda")**
 
 
 
@@ -68,7 +68,7 @@
 
 ## **Special thanks go to the following individuals for their contributions to this project:**
 
-### **[@Andrei](https://forum.xda-developers.com/m/starbucks2010.2707699/) for the applock function.**
+### **[@Andrei](https://forum.xda-developers.com/m/starbucks2010.2707699/) for the applock function and for the build.prop from Beyond Rom**
 ### **[@Fei-Ke](https://github.com/fei-ke) for creating the [CSC XML decoder](https://github.com/fei-ke/OmcTextDecoder).**
 ### **[@m8980](https://forum.xda-developers.com/m/m8980.1614889/) for the module template.**
 ### **[@exocetdj](https://forum.xda-developers.com/m/exocetdj.4366077/) for the [samsung NOTE20 Ultra port template](https://forum.xda-developers.com/t/root-reqd-magisk-module-exynos-oxm-csc-features.4160857/)**
