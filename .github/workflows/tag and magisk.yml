@@ -2,10 +2,6 @@ name: build magisk module and tag version
 
 on:
   workflow_dispatch:
-    inputs:
-      branch:
-        required: true
-        default: 'main'
 
 jobs:
   update_version_and_build:
