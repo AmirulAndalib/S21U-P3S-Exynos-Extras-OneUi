@@ -36,14 +36,26 @@ jobs:
           sed -i "s|\"zipUrl\": \".*\"|\"zipUrl\": \"https://github.com/AmirulAndalib/S21U-P3S-Exynos-Extras-OneUi/releases/download/${new_version}/${zip_filename}.zip\"|" update.json
           rm update.json.tmp
 
-      - name: Create CHANGELOG.txt
-        run: |
-          new_version="${{ steps.version.outputs.new_version }}"
-          commit_message=$(git log -1 --pretty=%B)
-          commit_sha=$(git rev-parse HEAD)
-          commit_date=$(git log -1 --pretty=%cd)
-          changelog="Release : ${new_version}\n\nDate and Time: ${commit_date}\n\nChangelog: ${commit_message}\n\nRevision: ${commit_sha}"
-          echo -e "$changelog" > CHANGELOG.txt
+          - name: Create CHANGELOG.txt
+          run: |
+            new_version="${{ steps.version.outputs.new_version }}"
+            commit_message=$(git log -1 --pretty=%B)
+            commit_sha=$(git rev-parse HEAD)
+            commit_date=$(TZ=$TZ date +'%d %B %Y, %I:%M %p %Z')
+            changelog="Release: ${new_version}\n\n"
+            changelog+="Date and Time: ${commit_date}\n"
+            changelog+="Commit SHA: ${commit_sha}\n"
+            changelog+="Commit Message:\n${commit_message}\n"
+            changelog+="\nChanges:\n"
+            git diff-tree --no-commit-id --name-status -r HEAD | while read status file; do
+              case $status in
+                M) changelog+="  - Modified: $file\n";;
+                A) changelog+="  - Added: $file\n";;
+                D) changelog+="  - Deleted: $file\n";;
+              esac
+            done
+            echo -e "$changelog" > CHANGELOG.txt
+        
 
       - name: Commit and Push Changes
         run: |
