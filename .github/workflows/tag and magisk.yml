@@ -38,27 +38,27 @@ jobs:
 
       - name: Create CHANGELOG.txt
         run: |
-          new_version="${{ steps.version.outputs.new_version }}"
-          commit_message=$(git log -1 --pretty=%B)
+            new_version="${{ steps.version.outputs.new_version }}"
+            commit_message=$(git log -1 --pretty=%B)
             commit_sha=$(git rev-parse HEAD)
             commit_date=$(TZ=$TZ date +'%d %B %Y, %I:%M %p %Z')
-            
             changelog="Release: ${new_version}\n\n"
             changelog+="Date and Time: ${commit_date}\n"
             changelog+="Commit SHA: ${commit_sha}\n"
             changelog+="Commit Message:\n${commit_message}\n"
             changelog+="\nChanges:\n"
-            
-            (
-              git diff-tree --no-commit-id --name-status -r HEAD | while read status file; do
+            changes=$(git diff-tree --no-commit-id --name-status -r HEAD)
+            if [ -n "$changes" ]; then
+              while read -r status file; do
                 case $status in
                   M) changelog+="  - Modified: $file\n";;
                   A) changelog+="  - Added: $file\n";;
                   D) changelog+="  - Deleted: $file\n";;
                 esac
-              done
-            )
-            
+              done <<< "$changes"
+            else
+              changelog+="  - No changes to files\n"
+            fi
             echo -e "$changelog" > CHANGELOG.txt
         
 
