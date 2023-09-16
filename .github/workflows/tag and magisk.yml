@@ -46,7 +46,7 @@ jobs:
             changelog="Release: ${new_version}\n\n\n"
             changelog+="Date and Time: ${commit_date}\n\n\n"
             changelog+="Commit SHA: ${commit_sha}\n\n\n"
-            changelog+="Commit Message:\n${commit_message}\n\n\n"
+            changelog+="Commit Message:\n${commit_message}\n\n"
             changelog+="\nChanges:\n"
             changes=$(git diff-tree --no-commit-id --name-status -r HEAD)
         
