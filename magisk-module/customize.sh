@@ -75,7 +75,10 @@ REPLACE="
 # Construct your own list here, it will overwrite the example
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
-/system/priv-app
+/system/priv-app/AppLock
+/system/priv-app/DailyBoard
+/system/priv-app/SamsungContinuity
+/system/priv-app/SamsungContinuityDevice
 "
 
 ##########################################################################################
@@ -94,8 +97,10 @@ set_permissions() {
   # Some templates if you have no idea what to do:
 
   # set_perm_recursive  <dirname>                <owner> <group> <dirpermission> <filepermission> <contexts> (default: u:object_r:system_file:s0)
-  set_perm_recursive  $MODPATH/system/priv-app     0       0       0755            0644
-
+  set_perm_recursive  $MODPATH/system/priv-app/AppLock       0       0       0755            0644
+  set_perm_recursive  $MODPATH/system/priv-app/DailyBoard    0       0       0755            0644
+  set_perm_recursive  $MODPATH/system/priv-app/SamsungContinuity    0       0       0755            0644
+  set_perm_recursive  $MODPATH/system/priv-app/SamsungContinuityDevice    0       0       0755            0644
   # set_perm  <filename>                         <owner> <group> <permission> <contexts> (default: u:object_r:system_file:s0)
   # set_perm  $MODPATH/system/bin/app_process32   0       2000    0755         u:object_r:zygote_exec:s0
   # set_perm  $MODPATH/system/bin/dex2oat         0       2000    0755         u:object_r:dex2oat_exec:s0

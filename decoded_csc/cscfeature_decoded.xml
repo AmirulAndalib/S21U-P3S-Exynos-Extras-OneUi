@@ -43,7 +43,6 @@
     <CscFeature_Launcher_PerformanceTunning>TRUE</CscFeature_Launcher_PerformanceTunning>
     <CscFeature_Launcher_DisableFastScrollIndex>TRUE</CscFeature_Launcher_DisableFastScrollIndex>
     <CscFeature_Wifi_SupportAdvancedMenu>TRUE</CscFeature_Wifi_SupportAdvancedMenu>
-    <CscFeature_Gallery_SupportHideAlbum>TRUE</CscFeature_Gallery_SupportHideAlbum>
     <CscFeature_SmartManager_ConfigDashboard>dual_dashboard</CscFeature_SmartManager_ConfigDashboard>
     <CscFeature_Setting_SupportDataUsageReminder>TRUE</CscFeature_Setting_SupportDataUsageReminder>
     <CscFeature_Settings_Airplane_Wifi_Dependency>TRUE</CscFeature_Settings_Airplane_Wifi_Dependency>
@@ -58,7 +57,6 @@
     <CscFeature_Message_DisableSmsToMmsConversionByTextInput>TRUE</CscFeature_Message_DisableSmsToMmsConversionByTextInput>
     <CscFeature_Message_EnableMsgTypeIndicationDuringComposing>TRUE</CscFeature_Message_EnableMsgTypeIndicationDuringComposing>
     <CscFeature_Message_EnableSaveVMessage>TRUE</CscFeature_Message_EnableSaveVMessage>
-    <CscFeature_Message_EnableSaveRestoreSDCard>TRUE</CscFeature_Message_EnableSaveRestoreSDCard>
     <CscFeature_Message_EnableFolderView>TRUE</CscFeature_Message_EnableFolderView>
     <CscFeature_RIL_SmsReadConfirm>TRUE</CscFeature_RIL_SmsReadConfirm>
     <CscFeature_Wifi_UseDefaultSecurityAs>NONE</CscFeature_Wifi_UseDefaultSecurityAs>
