@@ -1,7 +1,7 @@
 id=SamsungCSCextras
 name=SamsungCSCextras
-version=v13.09.2023.22.31
-versionCode=1309232231
+version=v16.09.2023.22.10
+versionCode=1609232210
 author=amirulandalib
 description=Module with some extra CSC Features + and some build.prop tweaks for Samsung Galaxy S21/+/Ultra devices.
 support=https://github.com/AmirulAndalib/S21U-P3S-Exynos-Extras-OneUi/issues
