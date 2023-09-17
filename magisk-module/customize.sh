@@ -79,6 +79,7 @@ REPLACE="
 /system/priv-app/DailyBoard
 /system/priv-app/SamsungContinuity
 /system/priv-app/SamsungContinuityDevice
+/system/priv-app/StorageBooster
 "
 
 ##########################################################################################
@@ -101,6 +102,7 @@ set_permissions() {
   set_perm_recursive  $MODPATH/system/priv-app/DailyBoard    0       0       0755            0644
   set_perm_recursive  $MODPATH/system/priv-app/SamsungContinuity    0       0       0755            0644
   set_perm_recursive  $MODPATH/system/priv-app/SamsungContinuityDevice    0       0       0755            0644
+  set_perm_recursive  $MODPATH/system/priv-app/StorageBooster    0       0       0755            0644
   # set_perm  <filename>                         <owner> <group> <permission> <contexts> (default: u:object_r:system_file:s0)
   # set_perm  $MODPATH/system/bin/app_process32   0       2000    0755         u:object_r:zygote_exec:s0
   # set_perm  $MODPATH/system/bin/dex2oat         0       2000    0755         u:object_r:dex2oat_exec:s0
