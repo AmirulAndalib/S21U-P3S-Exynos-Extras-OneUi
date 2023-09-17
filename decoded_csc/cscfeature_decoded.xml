@@ -73,7 +73,7 @@
     <CscFeature_SystemUI_ConfigDefQuickSettingItem>Wifi,Location,SilentMode,MobileData,Bluetooth,Flashlight,RotationLock,AirplaneMode,BatteryMode,ScreenCapture,BlueLightFilter,WifiHotspot,PersonalMode,SecureFolder,ScreenRecorder,Nfc,Aod,AllShareCast,DeviceVisibility,Dnd,Sync,PowerPlanning,VoLte,Dolby,EdgeLighting,UDS,DormantMode,UHQ,Ebook,WifiCalling,DailyBoard,Performance,PowerShare,DesktopMode,SFinder,NightMode,Routines,Hotspot,DailyBoard,HomeMode</CscFeature_SystemUI_ConfigDefQuickSettingItem>
     <CscFeature_SmartManager_ConfigSubFeatures>applock|roguepopup|autoclean|autorestart|storageclean|autolaunch|appclean|devicesecurity</CscFeature_SmartManager_ConfigSubFeatures>
     <CscFeature_Knox_SupportKnoxGuard>FALSE</CscFeature_Knox_SupportKnoxGuard>
-    <CscFeature_Common_ConfigYuva>powerplanning|reserve|zeroforward|mileage|dashboard|downloadable_spowerplanning|downloadable_usbbackup|MemorySaver|MemorySaver_Refresh|MemorySaver_Refresh_INSTALL_TO_SDCARD</CscFeature_Common_ConfigYuva>
+    <CscFeature_Common_ConfigYuva>sabc_os_update|powerplanning|reserve|zeroforward|mileage|dashboard|downloadable_spowerplanning|downloadable_usbbackup|MemorySaver|MemorySaver_Refresh|MemorySaver_Refresh_INSTALL_TO_SDCARD</CscFeature_Common_ConfigYuva>
     <CscFeature_Contact_EnableCallButtonInList>TRUE</CscFeature_Contact_EnableCallButtonInList>
     <CscFeature_Calendar_SetColorOfDays>XXXXXBR</CscFeature_Calendar_SetColorOfDays>
     <CscFeature_Calendar_EnableWeatherInfo>TRUE</CscFeature_Calendar_EnableWeatherInfo>
