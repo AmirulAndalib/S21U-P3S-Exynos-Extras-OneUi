@@ -28,6 +28,9 @@
 - **VoLTE, NFC, and WiFi calling tweaks**
 - **Camera tweaks**
 - **Calendar, calculator, and search bar tweaks**
+- **QS/QuickSetting panel tweaks**
+- **Added storage booster on device manager**
+- **Added daily board apk - See A Slideshow Of Your Photos, The Time, The Weather and Your Calendar While Your Device Is Charging.** UNTESTED .WIP**
 
 ### **From `system/build.prop` :**
 - **Use Vulkan gpu driver instead of OpenGL**
@@ -35,7 +38,9 @@
 - **FPS tweaks**
 - **Set video display to 4k (3840x2160) in specific apps: YouTube, VLC, Netflix, and select others (not fully tested)**
 - **Enable hardware acceleration for video processing and decoding**
-- **Enable UWB (Ultrawideband) support**
+- **Enable UWB (UltraWideBand) support**
+- **Wifi Scan and power saving tweaks**
+- **RIL optimizations**
 
 ## **Please note that there are numerous additional features that cannot be explained in detail here, so it's best to explore them yourself. You can find more information about these modifications in the following folders:**
 
