@@ -89,7 +89,6 @@
     <CscFeature_Common_EnableCallWaitingWhileRoaming>TRUE</CscFeature_Common_EnableCallWaitingWhileRoaming>
     <CscFeature_Calculator_ConfigConverter>CHN</CscFeature_Calculator_ConfigConverter>
     <CscFeature_Calculator_ConfigMortgage>CHN</CscFeature_Calculator_ConfigMortgage>
-    <CscFeature_SystemUI_ConfigMaxRssiLevel>5</CscFeature_SystemUI_ConfigMaxRssiLevel>
     <CscFeature_LockScreen_ConfigCarrierTextPolicy>DisplayUsimText;DisplayPlmnOnBottom</CscFeature_LockScreen_ConfigCarrierTextPolicy>
     <CscFeature_Email_EnableSaveAsAttachment>TRUE</CscFeature_Email_EnableSaveAsAttachment>
     <CscFeature_Framework_ReplaceDataTypeIconAsOpBrand>TRUE</CscFeature_Framework_ReplaceDataTypeIconAsOpBrand>
