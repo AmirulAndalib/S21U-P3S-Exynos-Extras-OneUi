@@ -78,7 +78,7 @@ REPLACE="
 /system/priv-app/AppLock
 /system/priv-app/DailyBoard
 /system/priv-app/StorageBooster
-/system/priv-app/gamedriver_s20_mali_g77
+/system/priv-app/GameDriver-EX2100
 "
 
 ##########################################################################################
@@ -100,7 +100,7 @@ set_permissions() {
   set_perm_recursive  $MODPATH/system/priv-app/AppLock       0       0       0755            0644
   set_perm_recursive  $MODPATH/system/priv-app/DailyBoard    0       0       0755            0644
   set_perm_recursive  $MODPATH/system/priv-app/StorageBooster    0       0       0755            0644
-  set_perm_recursive  $MODPATH/system/priv-app/gamedriver_s20_mali_g77    0       0       0755            0644
+  set_perm_recursive  $MODPATH/system/priv-app/GameDriver-EX2100    0       0       0755            0644
   # set_perm  <filename>                         <owner> <group> <permission> <contexts> (default: u:object_r:system_file:s0)
   # set_perm  $MODPATH/system/bin/app_process32   0       2000    0755         u:object_r:zygote_exec:s0
   # set_perm  $MODPATH/system/bin/dex2oat         0       2000    0755         u:object_r:dex2oat_exec:s0
