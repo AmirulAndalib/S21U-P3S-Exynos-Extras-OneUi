@@ -204,3 +204,57 @@ ro.netflix.bsp_rev=EXYNOS2100-34574-1
 # from variable PRODUCT_SYSTEM_DEFAULT_PROPERTIES
 ####################################
 # end of file
+##CUSTOM TWEAKS##
+fw.max_users=3
+fw.power_user_switcher=1
+fw.show_hidden_users=1
+fw.show_multiuserui=1
+ring.delay=0
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+ro.media.enc.jpeg.quality=100
+ro.securestorage.support=false
+ro.telephony.call_ring.delay=0
+wlan.wfd.hdcp=disable
+ro.crypto.state=encrypted
+ro.config.hw_quickpoweron=true
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+wifi.supplicant_scan_interval=180
+debug.performance.tuning=1
+ro.HOME_APP_ADJ=1
+persist.adb.notify=0
+persist.service.adb.enable=1
+persist.service.debuggable=1
+ro.boot.flash.locked=1
+ro.config.hw_fast_dormancy=1
+ro.knox.enhance.zygote.aslr=1
+ro.config.hw_quickpoweron=true
+ro.grx.ui=dual
+#more props from xda:
+sys.display-size=3840x2160
+video.accelerate.hw=1
+ro.opa.eligible_device=true
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.enc.hprof.vid.fps=65
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+debug.gr.swapinterval=0
+ro.fps_enable=1
+ro.fps.capsmin=120fps
+ro.fps.capsmax=120fps
+cpu.fps=120
+gpu.fps=120
+debug.sf.showupdates=0
+debug.sf.showcpu=0
+debug.sf.showbackground=0
+debug.sf.showfps=0
+ro.hwui.use_vulkan=1
+ro.ril.enable.amr.wideband=1
+persist.cust.tel.eons=1
+debug.sf.hw=1
+debug.egl.profiler=1
+debug.egl.hw=1
+debug.composition.type=gpu
+ro.camcorder.videoModes=true
