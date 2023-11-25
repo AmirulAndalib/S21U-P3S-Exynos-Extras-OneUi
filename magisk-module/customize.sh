@@ -98,7 +98,6 @@ set_permissions() {
 
   # set_perm_recursive  <dirname>                <owner> <group> <dirpermission> <filepermission> <contexts> (default: u:object_r:system_file:s0)
   set_perm_recursive  $MODPATH/system/priv-app/AppLock       0       0       0755            0644
-  set_perm_recursive  $MODPATH/system/priv-app/DailyBoard    0       0       0755            0644
   set_perm_recursive  $MODPATH/system/priv-app/StorageBooster    0       0       0755            0644
   set_perm_recursive  $MODPATH/system/priv-app/GameDriver-EX2100    0       0       0755            0644
   # set_perm  <filename>                         <owner> <group> <permission> <contexts> (default: u:object_r:system_file:s0)

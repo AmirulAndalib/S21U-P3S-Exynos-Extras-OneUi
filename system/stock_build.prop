@@ -42,7 +42,7 @@ ro.build.version.release_or_preview_display=14
 ro.build.version.security_patch=2023-11-01
 ro.build.version.base_os=
 ro.build.version.security_index=1
-ro.build.version.min_supported_target_sdk=28
+ro.build.version.min_supported_target_sdk=1
 ro.build.date=Tue Nov  7 22:43:58 KST 2023
 ro.build.date.utc=1699364638
 ro.build.type=user
@@ -203,7 +203,9 @@ ro.netflix.bsp_rev=EXYNOS2100-34574-1
 ####################################
 # from variable PRODUCT_SYSTEM_DEFAULT_PROPERTIES
 ####################################
-# end of file
+com.samsung.speg.prelauncher.disable=false
+# Auto-added by post_process_props.py
+persist.sys.usb.config=mtp,conn_gadget,adb
 ##CUSTOM TWEAKS##
 fw.max_users=3
 fw.power_user_switcher=1
@@ -242,7 +244,7 @@ pm.sleep_mode=1
 ro.ril.disable.power.collapse=0
 debug.gr.swapinterval=0
 ro.fps_enable=1
-ro.fps.capsmin=120fps
+ro.fps.capsmin=60fps
 ro.fps.capsmax=120fps
 cpu.fps=120
 gpu.fps=120
@@ -258,3 +260,4 @@ debug.egl.profiler=1
 debug.egl.hw=1
 debug.composition.type=gpu
 ro.camcorder.videoModes=true
+ro.build.system_root_image=false
