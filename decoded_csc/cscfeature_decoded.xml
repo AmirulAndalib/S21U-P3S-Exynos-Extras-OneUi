@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!--Modded CSC-->
 <SamsungMobileFeature>
   <Version>ED00005</Version>
   <Country>NEW ZEALAND</Country>
@@ -21,7 +20,6 @@
     <CscFeature_Vision_ConfigFood>AZMXX</CscFeature_Vision_ConfigFood>
     <CscFeature_Vision_ConfigBeauty>NLLXX</CscFeature_Vision_ConfigBeauty>
     <CscFeature_Message_SmsInputMode>automatic</CscFeature_Message_SmsInputMode>
-    <CscFeature_Common_AllowExternalApkUsage>TRUE</CscFeature_Common_AllowExternalApkUsage>
     <CscFeature_Weather_ConfigCpType>TWC</CscFeature_Weather_ConfigCpType>
     <CscFeature_Camcorder_DefaultQuality>superfine</CscFeature_Camcorder_DefaultQuality>
     <CscFeature_Camera_DefaultQuality>superfine</CscFeature_Camera_DefaultQuality>
@@ -36,7 +34,6 @@
     <CscFeature_Message_EnableRoamGuard>FALSE</CscFeature_Message_EnableRoamGuard>
     <CscFeature_Message_EnableMessagePriorityDuringComposing>FALSE</CscFeature_Message_EnableMessagePriorityDuringComposing>
     <CscFeature_Message_EnableMenuRemindAlert>TRUE</CscFeature_Message_EnableMenuRemindAlert>
-    <CscFeature_Message_EnableSaveRestoreSDCard>TRUE</CscFeature_Message_EnableSaveRestoreSDCard>
     <CscFeature_Message_EnableAllContextMenuInMsgViewer>TRUE</CscFeature_Message_EnableAllContextMenuInMsgViewer>
     <CscFeature_NFC_StatusBarIconType>DEFAULT</CscFeature_NFC_StatusBarIconType>
     <CscFeature_NFC_DefStatus>OFF</CscFeature_NFC_DefStatus>
@@ -62,9 +59,7 @@
     <CscFeature_Wifi_UseDefaultSecurityAs>NONE</CscFeature_Wifi_UseDefaultSecurityAs>
     <CscFeature_Wifi_MaxClient4MobileAp>10</CscFeature_Wifi_MaxClient4MobileAp>
     <CscFeature_SetupWizard_DisablePrivacyPolicyAgreement>TRUE</CscFeature_SetupWizard_DisablePrivacyPolicyAgreement>
-    <CscFeature_SystemUI_ConfigOverrideDataIcon>LTE</CscFeature_SystemUI_ConfigOverrideDataIcon>
-    <CscFeature_Setting_CustNetworkSelMenu4>LTEONLY</CscFeature_Setting_CustNetworkSelMenu4>
-    <CscFeature_Common_ConfigSvcProviderForUnknownNumber>whitepages,whitepages,whitepages/234</CscFeature_Common_ConfigSvcProviderForUnknownNumber>
+    <CscFeature_Common_ConfigSvcProviderForUnknownNumber>whitepages,whitepages,off</CscFeature_Common_ConfigSvcProviderForUnknownNumber>
     <CscFeature_Camera_ShutterSoundMenu>TRUE</CscFeature_Camera_ShutterSoundMenu>
     <CscFeature_VoiceCall_ConfigRecording>RecordingAllowed</CscFeature_VoiceCall_ConfigRecording>
     <CscFeature_Framework_SupportDataModeSwitchGlobalAction>TRUE</CscFeature_Framework_SupportDataModeSwitchGlobalAction>
@@ -73,7 +68,6 @@
     <CscFeature_SystemUI_ConfigDefQuickSettingItem>Wifi,Location,SilentMode,MobileData,Bluetooth,Flashlight,RotationLock,AirplaneMode,BatteryMode,ScreenCapture,BlueLightFilter,WifiHotspot,PersonalMode,SecureFolder,ScreenRecorder,Nfc,Aod,AllShareCast,DeviceVisibility,Dnd,Sync,PowerPlanning,VoLte,Dolby,EdgeLighting,UDS,DormantMode,UHQ,Ebook,WifiCalling,DailyBoard,Performance,PowerShare,DesktopMode,SFinder,NightMode,Routines,Hotspot,DailyBoard,HomeMode</CscFeature_SystemUI_ConfigDefQuickSettingItem>
     <CscFeature_SmartManager_ConfigSubFeatures>applock|roguepopup|autoclean|autorestart|storageclean|autolaunch|appclean|devicesecurity</CscFeature_SmartManager_ConfigSubFeatures>
     <CscFeature_Knox_SupportKnoxGuard>FALSE</CscFeature_Knox_SupportKnoxGuard>
-    <CscFeature_Common_ConfigYuva>sabc_os_update|powerplanning|reserve|zeroforward|mileage|dashboard|downloadable_spowerplanning|downloadable_usbbackup|MemorySaver|MemorySaver_Refresh</CscFeature_Common_ConfigYuva>
     <CscFeature_Contact_EnableCallButtonInList>TRUE</CscFeature_Contact_EnableCallButtonInList>
     <CscFeature_Calendar_SetColorOfDays>XXXXXBR</CscFeature_Calendar_SetColorOfDays>
     <CscFeature_Calendar_EnableWeatherInfo>TRUE</CscFeature_Calendar_EnableWeatherInfo>
@@ -100,7 +94,7 @@
     <CscFeature_Contact_ConfigImsOpStyle>XNZ</CscFeature_Contact_ConfigImsOpStyle>
     <CscFeature_Contact_SupportDuoVideoCall>TRUE</CscFeature_Contact_SupportDuoVideoCall>
     <CscFeature_GMS_SetClientIDBaseCr>android-samsung-ss</CscFeature_GMS_SetClientIDBaseCr>
-    <CscFeature_GMS_SetClientIDBaseMs>android-samsung-ss</CscFeature_GMS_SetClientIDBaseMs>
+    <CscFeature_GMS_SetClientIDBaseMs>android-samsung-rvo1</CscFeature_GMS_SetClientIDBaseMs>
     <CscFeature_GMS_SetClientIDBaseVs>android-samsung-rvo1</CscFeature_GMS_SetClientIDBaseVs>
     <CscFeature_Message_SupportSuggestedCategory>TRUE</CscFeature_Message_SupportSuggestedCategory>
     <CscFeature_RIL_ConfigWbamr>2G</CscFeature_RIL_ConfigWbamr>
@@ -117,7 +111,6 @@
     <CscFeature_VT_SupportEmergencyCall>TRUE</CscFeature_VT_SupportEmergencyCall>
     <CscFeature_VT_SupportGroupCall>TRUE</CscFeature_VT_SupportGroupCall>
     <CscFeature_VT_SupportOutgoingImageFromGallery>TRUE</CscFeature_VT_SupportOutgoingImageFromGallery>
-    <CscFeature_Common_ConfigBikeMode>bikemode|rewards|globalaction</CscFeature_Common_ConfigBikeMode>
     <CscFeature_Music_SupportPlaybackDuringCall>TRUE</CscFeature_Music_SupportPlaybackDuringCall>
     <CscFeature_Music_TranslateUnknownTitle>TRUE</CscFeature_Music_TranslateUnknownTitle>
     <CscFeature_Launcher_AddAutoRotationIcon>TRUE</CscFeature_Launcher_AddAutoRotationIcon>
@@ -143,7 +136,7 @@
     <CscFeature_Clock_ExclusiveEnablingAutoPowerSetting>TRUE</CscFeature_Clock_ExclusiveEnablingAutoPowerSetting>
     <CscFeature_Setting_EnableMenuNetworkMode>TRUE</CscFeature_Setting_EnableMenuNetworkMode>
     <CscFeature_Setting_EnableMenuNetworkModeForData>TRUE</CscFeature_Setting_EnableMenuNetworkModeForData>
-    <CscFeature_Camera_CameraFlicker>60hz</CscFeature_Camera_CameraFlicker>
+    <CscFeature_Camera_CameraFlicker>50hz</CscFeature_Camera_CameraFlicker>
     <CscFeature_Common_ConfigAllowedPackagesDuringDataSaving>com.samsung.android.smartcallprovider</CscFeature_Common_ConfigAllowedPackagesDuringDataSaving>
     <CscFeature_LockScreen_ConfigEmergencyCallPolicy>DirectCall</CscFeature_LockScreen_ConfigEmergencyCallPolicy>
     <CscFeature_Message_EnableMenuMmsExpiryDate>TRUE</CscFeature_Message_EnableMenuMmsExpiryDate>
@@ -171,12 +164,8 @@
     <CscFeature_GMS_SupportSTSTool>TRUE</CscFeature_GMS_SupportSTSTool>
     <CscFeature_Message_ConfigFreeMessage>on</CscFeature_Message_ConfigFreeMessage>
     <CscFeature_Message_DisableChooserForUrlLink>FALSE</CscFeature_Message_DisableChooserForUrlLink>
-    <CscFeature_Setting_IncludeApn4SwUpdate>TRUE</CscFeature_Setting_IncludeApn4SwUpdate>
     <CscFeature_Setting_SupportDefaultScreenMode6500k>TRUE</CscFeature_Setting_SupportDefaultScreenMode6500k>
     <CscFeature_SystemUI_ConfigQuickSettingPopup>PAP</CscFeature_SystemUI_ConfigQuickSettingPopup>
-    <CscFeature_Web_ConfigSyncSource>TRUE</CscFeature_Web_ConfigSyncSource>
-    <CscFeature_Setting_EnableMenuDownloadContents>TRUE</CscFeature_Setting_EnableMenuDownloadContents>
     <CscFeature_SystemUI_SupportWifiUsageViewOnQuickPanel>TRUE</CscFeature_SystemUI_SupportWifiUsageViewOnQuickPanel>
-    <CscFeature_SystemUI_ConfigDefQuickSettingItem>powerplanning|reserve|zeroforward</CscFeature_SystemUI_ConfigDefQuickSettingItem>
   </FeatureSet>
 </SamsungMobileFeature>
