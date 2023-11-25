@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <omcInfo>
   <contentType>0</contentType>
-  <version>SAOMC_SM-G998B_OXM_XNZ_13_0013</version>
+  <version>SAOMC_SM-G998B_OXM_XNZ_14_0008</version>
   <model>
     <name>SM-G998B</name>
   </model>
   <catalog>
     <customer>yes</customer>
-    <customerEdition>ED0006</customerEdition>
-    <carrierListVersion>130028</carrierListVersion>
+    <customerEdition>ED0003</customerEdition>
+    <carrierListVersion>140016</carrierListVersion>
     <cscfeature>yes</cscfeature>
     <carrierfeature>yes</carrierfeature>
     <cp>no</cp>
-    <imsupdate>no</imsupdate>
+    <imsupdate>yes</imsupdate>
   </catalog>
   <carrierList>
-    <carrierCount>25</carrierCount>
+    <carrierCount>26</carrierCount>
     <carrier>
       <mcc>514</mcc>
       <mnc>01</mnc>
@@ -132,6 +132,11 @@
       <mnc>01</mnc>
       <spn>MOBILIS</spn>
       <networkName>OPT-NC</networkName>
+    </carrier>
+    <carrier>
+      <mcc>547</mcc>
+      <mnc>15</mnc>
+      <networkName>Vodafone PF</networkName>
     </carrier>
     <carrier>
       <mcc>547</mcc>
