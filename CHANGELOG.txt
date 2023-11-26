@@ -1,14 +1,14 @@
-Release: v19.09.2023.00.21
+Release: v26.11.2023.16.19
 
 
-Date and Time: 19 September 2023, 12:21 AM NZST
+Date and Time: 26 November 2023, 04:19 PM NZDT
 
 
-Commit SHA: d677153731a3f88b784f93f7ee8f950482044069
+Commit SHA: 70aa4ae78eb35897902630489ee7579265b83013
 
 
 Commit Message:
-update readme
+encoded csc and updates
 
 
 Changes:
