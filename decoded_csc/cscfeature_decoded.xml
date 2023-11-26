@@ -169,6 +169,5 @@
     <CscFeature_SystemUI_SupportWifiUsageViewOnQuickPanel>TRUE</CscFeature_SystemUI_SupportWifiUsageViewOnQuickPanel>
     <CscFeature_Web_ConfigSyncSource>TRUE</CscFeature_Web_ConfigSyncSource>
     <CscFeature_Setting_EnableMenuDownloadContents>TRUE</CscFeature_Setting_EnableMenuDownloadContents>
-    <CscFeature_Common_ConfigYuva>sabc_os_update|powerplanning|reserve|zeroforward|mileage|dashboard|downloadable_spowerplanning|downloadable_usbbackup|MemorySaver|MemorySaver_Refresh</CscFeature_Common_ConfigYuva>
   </FeatureSet>
 </SamsungMobileFeature>
