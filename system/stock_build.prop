@@ -243,6 +243,7 @@ ro.media.enc.hprof.vid.fps=65
 pm.sleep_mode=1
 ro.ril.disable.power.collapse=0
 debug.gr.swapinterval=0
+# end of file
 ro.fps_enable=1
 ro.fps.capsmin=60fps
 ro.fps.capsmax=120fps
