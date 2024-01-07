@@ -8,7 +8,7 @@
 
 ## **Download Magisk Module: [![GitHub release (with filter)](https://img.shields.io/github/v/release/amirulandalib/S21U-P3S-Exynos-Extras-OneUi)](https://github.com/AmirulAndalib/S21U-P3S-Exynos-Extras-OneUi/releases/latest "Magisk Module")**
 
-## **Supported Version: [![OneUI](https://img.shields.io/badge/OneUI-Stock%20--%20EWJO-red?labelColor=blue)](https://forum.xda-developers.com/t/ewh5-august-galaxy-s21-ultra-5g-official-firmware-sm-g998b-27th-august.4218529/#post-84296207 "stock EWJO xda")**
+## **Supported Version: [![OneUI](https://img.shields.io/badge/OneUI6-Stock%20--%20FWL4-red?labelColor=blue)](https://forum.xda-developers.com/t/ewh5-august-galaxy-s21-ultra-5g-official-firmware-sm-g998b-27th-august.4218529/#post-84296207 "stock FWL4 xda")**
 
 
 
