@@ -33,9 +33,9 @@ jobs:
 
           cp system/build.prop magisk-module/system/build.prop
 
-          rm -rf magisk-module/system/cameradata/camera_feature.xml
+          rm -rf magisk-module/system/cameradata/camera-feature.xml
 
-          cp system/cameradata/camera_feature.xml magisk-module/system/cameradata/camera_feature.xml
+          cp system/cameradata/camera-feature.xml magisk-module/system/cameradata/camera-feature.xml
           
       - name: Commit and Push Changes
         uses: actions-js/push@master
