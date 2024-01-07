@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0006</CSCEdition>
+    <CSCEdition>ED0003</CSCEdition>
     <Country>New Zealand</Country>
     <CountryISO>NZ</CountryISO>
     <Region>SEA</Region>
     <SalesCode>XNZ</SalesCode>
-    <NbNetworkInfo>25</NbNetworkInfo>
+    <NbNetworkInfo>26</NbNetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>54715</MCCMNC>
+      <NetworkName>Vodafone PF</NetworkName>
+      <NWID>NW02193</NWID>
+    </NetworkInfo>
     <NetworkInfo>
       <MCCMNC>53001</MCCMNC>
       <NetworkName>Vodafone NZ</NetworkName>
@@ -238,7 +243,12 @@
       </Bookmark>
     </Browser>
     <Connections>
-      <NbProfileHandle>24</NbProfileHandle>
+      <NbProfileHandle>25</NbProfileHandle>
+      <ProfileHandle>
+        <NbNetProfile>1</NbNetProfile>
+        <NetworkName>Vodafone PF</NetworkName>
+        <ProfBrowser>Vodafone Mobile</ProfBrowser>
+      </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>5</NbNetProfile>
         <NetworkName>Vodafone NZ</NetworkName>
@@ -442,9 +452,11 @@
         <ProfBrowser>Bluesky AS</ProfBrowser>
       </ProfileHandle>
       <ProfileHandle>
-        <NbNetProfile>1</NbNetProfile>
+        <NbNetProfile>3</NbNetProfile>
         <NetworkName>Vodafone PNG</NetworkName>
         <ProfBrowser>VF PNG Internet</ProfBrowser>
+        <ProfIMS>IMS</ProfIMS>
+        <ProfXCAP>XCAP</ProfXCAP>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>1</NbNetProfile>
@@ -456,7 +468,7 @@
         <NetworkName>MANUIA</NetworkName>
         <ProfBrowser>MANUIA</ProfBrowser>
       </ProfileHandle>
-      <NbProfile>49</NbProfile>
+      <NbProfile>53</NbProfile>
       <Profile>
         <NetworkName>Vodafone NZ</NetworkName>
         <Editable>yes</Editable>
@@ -540,7 +552,7 @@
           <Port>80</Port>
         </Proxy>
         <PSparam>
-          <APN>wapaccess.co.nz</APN>
+          <APN>internet</APN>
         </PSparam>
       </Profile>
       <Profile>
@@ -556,7 +568,7 @@
           <EnableFlag>off</EnableFlag>
         </Proxy>
         <PSparam>
-          <APN>wapaccess.co.nz</APN>
+          <APN>internet</APN>
         </PSparam>
       </Profile>
       <Profile>
@@ -1212,6 +1224,63 @@
         <ProfileName>2d emergency</ProfileName>
         <PSparam>
           <APN>sos</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Vodafone PNG</NetworkName>
+        <IpVersion>ipv4v6</IpVersion>
+        <Editable>yes</Editable>
+        <ProfileName>IMS</ProfileName>
+        <Bearer>ps</Bearer>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>ims</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Vodafone PNG</NetworkName>
+        <Editable>yes</Editable>
+        <ProfileName>XCAP</ProfileName>
+        <Bearer>ps</Bearer>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>XCAP</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Vodafone PF</NetworkName>
+        <Editable>yes</Editable>
+        <HiddenStatus>show</HiddenStatus>
+        <ProfileName>Vodafone Mobile</ProfileName>
+        <URL>www.vodafone.pf</URL>
+        <Auth>normal</Auth>
+        <Bearer>ps</Bearer>
+        <Protocol>http</Protocol>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>internet</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Vodafone PF</NetworkName>
+        <Editable>yes</Editable>
+        <HiddenStatus>show</HiddenStatus>
+        <ProfileName>Vodacard/Nomad</ProfileName>
+        <URL>www.vodafone.pf</URL>
+        <Auth>normal</Auth>
+        <Bearer>ps</Bearer>
+        <Protocol>http</Protocol>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>nomad</APN>
         </PSparam>
       </Profile>
     </Connections>
