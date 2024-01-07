@@ -100,7 +100,7 @@
     <CscFeature_Contact_ConfigImsOpStyle>XNZ</CscFeature_Contact_ConfigImsOpStyle>
     <CscFeature_Contact_SupportDuoVideoCall>TRUE</CscFeature_Contact_SupportDuoVideoCall>
     <CscFeature_GMS_SetClientIDBaseCr>android-samsung-ss</CscFeature_GMS_SetClientIDBaseCr>
-    <CscFeature_GMS_SetClientIDBaseMs>android-samsung-ss</CscFeature_GMS_SetClientIDBaseMs>
+    <CscFeature_GMS_SetClientIDBaseMs>android-samsung-rvo1</CscFeature_GMS_SetClientIDBaseMs>
     <CscFeature_GMS_SetClientIDBaseVs>android-samsung-rvo1</CscFeature_GMS_SetClientIDBaseVs>
     <CscFeature_Message_SupportSuggestedCategory>TRUE</CscFeature_Message_SupportSuggestedCategory>
     <CscFeature_RIL_ConfigWbamr>2G</CscFeature_RIL_ConfigWbamr>

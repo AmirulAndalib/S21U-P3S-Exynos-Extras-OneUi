@@ -200,9 +200,6 @@ ro.kernel.qemu=0
 ro.audio.spatializer_enabled=true
 ro.audio.spatializer_enabled=true
 ro.netflix.bsp_rev=EXYNOS2100-34574-1
-####################################
-# from variable PRODUCT_SYSTEM_DEFAULT_PROPERTIES
-####################################
 com.samsung.speg.prelauncher.disable=true
 # Auto-added by post_process_props.py
 persist.sys.usb.config=mtp,conn_gadget,adb
