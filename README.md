@@ -29,7 +29,6 @@
 - **Camera tweaks**
 - **Calendar, calculator, and search bar tweaks**
 - **QS/QuickSetting panel tweaks**
-- **Added storage booster on device manager**
 - **Added daily board apk - See A Slideshow Of Your Photos, The Time, The Weather and Your Calendar While Your Device Is Charging.** UNTESTED .WIP**
 
 ### **From `system/build.prop` :**

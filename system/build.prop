@@ -112,8 +112,8 @@ ro.actionable_compatible_property.enabled=true
 ro.postinstall.fstab.prefix=/system
 ro.config.knox=v30
 ro.build.selinux=1
-ro.config.iccc_version=3.0
-ro.config.dmverity=N
+ro.config.iccc_version=iccc_disabled
+ro.config.dmverity=false
 ro.oem_unlock_supported=1
 ro.secure=1
 security.perf_harden=1
@@ -200,6 +200,9 @@ ro.kernel.qemu=0
 ro.audio.spatializer_enabled=true
 ro.audio.spatializer_enabled=true
 ro.netflix.bsp_rev=EXYNOS2100-34574-1
+####################################
+# from variable PRODUCT_SYSTEM_DEFAULT_PROPERTIES
+####################################
 com.samsung.speg.prelauncher.disable=true
 # Auto-added by post_process_props.py
 persist.sys.usb.config=mtp,conn_gadget,adb
@@ -209,6 +212,7 @@ fw.power_user_switcher=1
 fw.show_hidden_users=1
 fw.show_multiuserui=1
 ring.delay=0
+boot.fps=26
 ro.kernel.android.checkjni=0
 ro.kernel.checkjni=0
 ro.media.enc.jpeg.quality=100
@@ -257,4 +261,5 @@ debug.egl.profiler=1
 debug.egl.hw=1
 debug.composition.type=gpu
 ro.camcorder.videoModes=true
+ro.build.version.min_supported_target_sdk=1
 # end of file
