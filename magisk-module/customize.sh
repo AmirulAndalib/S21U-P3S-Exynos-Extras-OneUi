@@ -76,7 +76,6 @@ REPLACE="
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
 /system/priv-app/AppLock
-/system/priv-app/StorageBooster
 /system/priv-app/GameDriver-EX2100
 "
 
