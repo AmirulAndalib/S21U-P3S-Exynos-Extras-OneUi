@@ -73,7 +73,6 @@
     <CscFeature_SystemUI_ConfigDefQuickSettingItem>Wifi,Location,SilentMode,MobileData,Bluetooth,Flashlight,RotationLock,AirplaneMode,BatteryMode,ScreenCapture,BlueLightFilter,WifiHotspot,PersonalMode,SecureFolder,ScreenRecorder,Nfc,Aod,AllShareCast,DeviceVisibility,Dnd,Sync,PowerPlanning,VoLte,Dolby,EdgeLighting,UDS,DormantMode,UHQ,Ebook,WifiCalling,DailyBoard,Performance,PowerShare,DesktopMode,SFinder,NightMode,Routines,Hotspot,DailyBoard,HomeMode</CscFeature_SystemUI_ConfigDefQuickSettingItem>
     <CscFeature_SmartManager_ConfigSubFeatures>applock|roguepopup|autoclean|autorestart|storageclean|autolaunch|appclean|devicesecurity</CscFeature_SmartManager_ConfigSubFeatures>
     <CscFeature_Knox_SupportKnoxGuard>FALSE</CscFeature_Knox_SupportKnoxGuard>
-    <CscFeature_Common_ConfigYuva>sabc_os_update|powerplanning|reserve|zeroforward|mileage|dashboard|downloadable_spowerplanning|downloadable_usbbackup|MemorySaver|MemorySaver_Refresh</CscFeature_Common_ConfigYuva>
     <CscFeature_Contact_EnableCallButtonInList>TRUE</CscFeature_Contact_EnableCallButtonInList>
     <CscFeature_Calendar_SetColorOfDays>XXXXXBR</CscFeature_Calendar_SetColorOfDays>
     <CscFeature_Calendar_EnableWeatherInfo>TRUE</CscFeature_Calendar_EnableWeatherInfo>
@@ -117,7 +116,7 @@
     <CscFeature_VT_SupportEmergencyCall>TRUE</CscFeature_VT_SupportEmergencyCall>
     <CscFeature_VT_SupportGroupCall>TRUE</CscFeature_VT_SupportGroupCall>
     <CscFeature_VT_SupportOutgoingImageFromGallery>TRUE</CscFeature_VT_SupportOutgoingImageFromGallery>
-    <CscFeature_Common_ConfigBikeMode>bikemode|rewards|globalaction</CscFeature_Common_ConfigBikeMode>
+        <CscFeature_Common_ConfigBikeMode>bikemode|rewards|globalaction</CscFeature_Common_ConfigBikeMode>
     <CscFeature_Music_SupportPlaybackDuringCall>TRUE</CscFeature_Music_SupportPlaybackDuringCall>
     <CscFeature_Music_TranslateUnknownTitle>TRUE</CscFeature_Music_TranslateUnknownTitle>
     <CscFeature_Launcher_AddAutoRotationIcon>TRUE</CscFeature_Launcher_AddAutoRotationIcon>
@@ -177,5 +176,6 @@
     <CscFeature_Web_ConfigSyncSource>TRUE</CscFeature_Web_ConfigSyncSource>
     <CscFeature_Setting_EnableMenuDownloadContents>TRUE</CscFeature_Setting_EnableMenuDownloadContents>
     <CscFeature_SystemUI_SupportWifiUsageViewOnQuickPanel>TRUE</CscFeature_SystemUI_SupportWifiUsageViewOnQuickPanel>
+    <CscFeature_VoiceCall_ConfigOpStyleForMobileNetSetting>voltesettingscommon,checknonvoltesim,voltesettingOPS</CscFeature_VoiceCall_ConfigOpStyleForMobileNetSetting>
   </FeatureSet>
 </SamsungMobileFeature>
