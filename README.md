@@ -79,7 +79,10 @@
 
 ### **When Using magisk hide and SU-List to only give superuser to your selected apps, you need to add Camera and Applock app to su-list, else it will not work as per your expectation. (Only for HuskyDG's magisk module)**
 
-### **DO NOT USE THIS MODULE IF YOU DO NOT INTEND TO RESET YOUR PHONE ON EVERY FIRMWARE UPDATE, IT SHOULD BE ALWAYS FRESH AND MATCH FIRMWARE RELEASES PROVIDED ABOVE. YES, YOU CAN RESTORE BACKUP FROM SMARTSWITCH OR SAMSUNG CLOUD.**                                      
+### **If you do incase update your stock rom with root included by patching the ap file using maggisk, before you do so, make sure to uninstall this module and install it again after updating and make sure the latest version matches with the firmware code provided here, else it will bootloop your device.**
+
+### **By any chance, if the phone bootloops or it is stuck after post samsung boot logo, uninstalling this module without resetting is a breeze. Assuming you have loaded custom/third-party boot-recovery, twrp or something, open the file manager there, go to `/data/adb/modules` and delete this following folder entirely: `SamsungS21U-p3s-Extras`. It would be also helpful if you are able to report this issue here, logs are not needed.**
+
 
 ### **This project has been thoroughly tested on the Samsung Galaxy S21 Ultra running stock One Ui 6.0 (Rev: EWLA). It is currently stable and active on the EWLA stock ROM.**
 
