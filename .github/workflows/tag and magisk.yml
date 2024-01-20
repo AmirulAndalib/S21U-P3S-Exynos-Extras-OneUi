@@ -1,0 +1,97 @@
+name: build magisk module and tag version
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update_version_and_build:
+    runs-on: ubuntu-latest
+
+    env:
+      TZ: Pacific/Auckland  # Set the timezone to NZ/Auckland
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Generate Version
+        id: version
+        run: |
+          CURRENT_DATETIME=$(TZ=$TZ date +'%d.%m.%Y.%H.%M')
+          NEW_VERSION="v${CURRENT_DATETIME}"
+          NEW_VERSION_CODE=$(TZ=$TZ date +'%d%m%y%H%M')
+          echo "New Version: ${NEW_VERSION}"
+          echo "New Version Code: ${NEW_VERSION_CODE}"
+          echo "::set-output name=new_version::${NEW_VERSION}"
+          echo "::set-output name=new_version_code::${NEW_VERSION_CODE}"
+    
+      - name: Update module.prop and update.json
+        run: |
+          new_version="${{ steps.version.outputs.new_version }}"
+          new_version_code="${{ steps.version.outputs.new_version_code }}"
+          sed -i "s/version=.*/version=${new_version}/; s/versionCode=.*/versionCode=${new_version_code}/" magisk-module/module.prop
+          jq --arg new_version "$new_version" '.version = $new_version' update.json > update.json.tmp
+          jq --arg new_version_code "$new_version_code" '.versionCode = $new_version_code' update.json.tmp > update.json
+          zip_filename="S21U_p3s_csc_buildprop_magisk_module_${new_version}"
+          sed -i "s|\"zipUrl\": \".*\"|\"zipUrl\": \"https://github.com/AmirulAndalib/S21U-P3S-Exynos-Extras-OneUi/releases/download/${new_version}/${zip_filename}.zip\"|" update.json
+          rm update.json.tmp
+  
+      - name: Create CHANGELOG.txt
+        run: |
+          new_version="${{ steps.version.outputs.new_version }}"
+          commit_date=$(TZ=$TZ date +'%d %B %Y, %I:%M %p %Z')
+    
+          awk -v new_version="$new_version" -v commit_date="$commit_date" '
+            BEGIN { RS="\n\n"; FS="\n" }
+            {
+              if (/^Changes:/) {
+                print "Release: " new_version "\n\nDate and Time: " commit_date "\n\n" $0;
+              } else {
+                print $0;
+              }
+            }
+          ' CHANGELOG.txt > CHANGELOG.tmp && mv CHANGELOG.tmp CHANGELOG.txt
+    
+      - name: Update Release Information in README.md
+        run: |
+          new_version="${{ steps.version.outputs.new_version }}"
+          current_date_time=$(TZ=$TZ date +'%d %B, %Y time: %I:%M%p %Z')
+          awk -v new_version="$new_version" -v current_date_time="$current_date_time" '{gsub(/## \*\*Release ->> .*/, "## **Release ->> " current_date_time ", " new_version "**")}1' README.md > README.md.tmp
+          mv README.md.tmp README.md
+        
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add magisk-module/module.prop update.json README.md CHANGELOG.txt
+          git commit -m "Bump version to ${{ steps.version.outputs.new_version }}"
+          git push
+
+      - name: Zip Magisk Module
+        run: |
+          cd magisk-module  # Change to the "magisk-module" folder
+
+          new_version="${{ steps.version.outputs.new_version }}"
+          zip_filename="S21U_p3s_csc_buildprop_magisk_module_${new_version}"
+
+          zip -r "$zip_filename.zip" *
+
+          ls -la && pwd
+
+      - name: Create Tag
+        run: |
+          new_version="${{ steps.version.outputs.new_version }}"
+          git tag "${new_version}"
+          git push origin "${new_version}"
+
+      - uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ steps.version.outputs.new_version }}"
+          draft: false
+          prerelease: false
+          title: "Magisk Module for modded CSC and Build.prop release: ${{ steps.version.outputs.new_version }}"
+          files: |
+            /home/runner/work/S21U-P3S-Exynos-Extras-OneUi/S21U-P3S-Exynos-Extras-OneUi/magisk-module/*.zip
+            CHANGELOG.txt

@@ -1,0 +1,27 @@
+name: Decode CSC Workflow
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  decode-csc:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Decode CSC
+        run: |
+
+          java -jar omc-decoder.jar -i optics/configs/carriers/single/XNZ/conf/system/cscfeature.xml -o cscfeature_decoded.xml
+          rm -rf decoded_csc
+          mkdir decoded_csc
+          mv cscfeature_decoded.xml decoded_csc/cscfeature_decoded.xml
+          
+      - name: Commit and Push Changes
+        uses: actions-js/push@master
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            message: "decoded csc and updates"

@@ -1,0 +1,44 @@
+name: Encode CSC Workflow
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  encode-csc:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Encode CSC
+        run: |
+       
+          cd decoded_csc
+
+          java -jar /home/runner/work/S21U-P3S-Exynos-Extras-OneUi/S21U-P3S-Exynos-Extras-OneUi/omc-decoder.jar -e -i cscfeature_decoded.xml -o cscfeature.xml
+           
+          rm -rf /home/runner/work/S21U-P3S-Exynos-Extras-OneUi/S21U-P3S-Exynos-Extras-OneUi/optics/configs/carriers/single/XNZ/conf/system/cscfeature.xml
+
+          mv cscfeature.xml /home/runner/work/S21U-P3S-Exynos-Extras-OneUi/S21U-P3S-Exynos-Extras-OneUi/optics/configs/carriers/single/XNZ/conf/system/cscfeature.xml
+
+          cd /home/runner/work/S21U-P3S-Exynos-Extras-OneUi/S21U-P3S-Exynos-Extras-OneUi/
+
+          rm -rf magisk-module/optics_new/configs/
+
+          cp -r optics/configs/ magisk-module/optics_new/configs/
+
+          rm -rf magisk-module/system/build.prop
+
+          cp system/build.prop magisk-module/system/build.prop
+
+          rm -rf magisk-module/system/cameradata/camera-feature.xml
+
+          cp system/cameradata/camera-feature.xml magisk-module/system/cameradata/camera-feature.xml
+          
+      - name: Commit and Push Changes
+        uses: actions-js/push@master
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            message: "encoded csc and updates"

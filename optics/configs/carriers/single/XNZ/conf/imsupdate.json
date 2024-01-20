@@ -1,0 +1,11 @@
+{
+    "note": "Add imsupdate for Q5 with carrier = Spark_NZ",
+    "imsswitch_update": {
+        "imsswitch": [
+            {
+                "mnoname": "Spark_NZ",
+                "enableServiceSmsip": true
+            }
+        ]
+    }
+}
