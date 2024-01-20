@@ -1,3 +1,7 @@
+Release: v20.01.2024.18.20
+
+Date and Time: 20 January 2024, 06:20 PM NZDT
+
 Changes:
   - Moved One Ui 6.0.
   - Moved to FWLA firmware Jan1, 2024 security patch.
@@ -5,4 +9,3 @@ Changes:
   - GPU Driver for Exynos2100 from Beyond Rom.
   - Match build.prop with latest firmware.
   - Tested on G998BXXS9FWLA firmware.
-
