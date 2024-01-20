@@ -1,6 +1,6 @@
 # **Samsung S21 Ultra Feature Modifications**
 
-## **Release ->> 20 January, 2024 time: 08:28PM NZDT, v20.01.2024.20.28**
+## **Release ->> 20 January, 2024 time: 11:34PM NZDT, v20.01.2024.23.34**
 
 ## **Based on: [FWLA firmware](https://samfw.com/firmware/SM-G998B/BTU/G998BXXS9FWLA) `G998BXXS9FWLA`**
 
