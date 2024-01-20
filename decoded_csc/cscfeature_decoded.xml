@@ -116,7 +116,7 @@
     <CscFeature_VT_SupportEmergencyCall>TRUE</CscFeature_VT_SupportEmergencyCall>
     <CscFeature_VT_SupportGroupCall>TRUE</CscFeature_VT_SupportGroupCall>
     <CscFeature_VT_SupportOutgoingImageFromGallery>TRUE</CscFeature_VT_SupportOutgoingImageFromGallery>
-        <CscFeature_Common_ConfigBikeMode>bikemode|rewards|globalaction</CscFeature_Common_ConfigBikeMode>
+    <CscFeature_Common_ConfigBikeMode>bikemode|rewards|globalaction</CscFeature_Common_ConfigBikeMode>
     <CscFeature_Music_SupportPlaybackDuringCall>TRUE</CscFeature_Music_SupportPlaybackDuringCall>
     <CscFeature_Music_TranslateUnknownTitle>TRUE</CscFeature_Music_TranslateUnknownTitle>
     <CscFeature_Launcher_AddAutoRotationIcon>TRUE</CscFeature_Launcher_AddAutoRotationIcon>
