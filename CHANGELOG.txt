@@ -12,4 +12,5 @@ Changes:
   - Unlocked new camera features.
   - GPU Driver for Exynos2100 from Beyond Rom.
   - Match build.prop with latest firmware.
+  - Default scaling governor for CPU is set to performance, persistent across reboots.
   - Tested on G998BXXS9FWLA firmware.
