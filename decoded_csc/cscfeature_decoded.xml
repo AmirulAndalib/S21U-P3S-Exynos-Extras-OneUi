@@ -41,7 +41,7 @@
     <CscFeature_NFC_StatusBarIconType>DEFAULT</CscFeature_NFC_StatusBarIconType>
     <CscFeature_NFC_DefStatus>OFF</CscFeature_NFC_DefStatus>
     <CscFeature_Launcher_PerformanceTunning>TRUE</CscFeature_Launcher_PerformanceTunning>
-    <CscFeature_Launcher_DisableFastScrollIndex>TRUE</CscFeature_Launcher_DisableFastScrollIndex>
+    <CscFeature_Launcher_DisableFastScrollIndex>FALSE</CscFeature_Launcher_DisableFastScrollIndex>
     <CscFeature_Wifi_SupportAdvancedMenu>TRUE</CscFeature_Wifi_SupportAdvancedMenu>
     <CscFeature_SmartManager_ConfigDashboard>dual_dashboard</CscFeature_SmartManager_ConfigDashboard>
     <CscFeature_Setting_SupportDataUsageReminder>TRUE</CscFeature_Setting_SupportDataUsageReminder>
@@ -64,7 +64,7 @@
     <CscFeature_SetupWizard_DisablePrivacyPolicyAgreement>TRUE</CscFeature_SetupWizard_DisablePrivacyPolicyAgreement>
     <CscFeature_SystemUI_ConfigOverrideDataIcon>LTE</CscFeature_SystemUI_ConfigOverrideDataIcon>
     <CscFeature_Setting_CustNetworkSelMenu4>LTEONLY</CscFeature_Setting_CustNetworkSelMenu4>
-    <CscFeature_Common_ConfigSvcProviderForUnknownNumber>whitepages,whitepages,whitepages/234</CscFeature_Common_ConfigSvcProviderForUnknownNumber>
+    <CscFeature_Common_ConfigSvcProviderForUnknownNumber>whitepages,whitepages,off</CscFeature_Common_ConfigSvcProviderForUnknownNumber>
     <CscFeature_Camera_ShutterSoundMenu>TRUE</CscFeature_Camera_ShutterSoundMenu>
     <CscFeature_VoiceCall_ConfigRecording>RecordingAllowed</CscFeature_VoiceCall_ConfigRecording>
     <CscFeature_Framework_SupportDataModeSwitchGlobalAction>TRUE</CscFeature_Framework_SupportDataModeSwitchGlobalAction>
@@ -177,5 +177,45 @@
     <CscFeature_Setting_EnableMenuDownloadContents>TRUE</CscFeature_Setting_EnableMenuDownloadContents>
     <CscFeature_SystemUI_SupportWifiUsageViewOnQuickPanel>TRUE</CscFeature_SystemUI_SupportWifiUsageViewOnQuickPanel>
     <CscFeature_VoiceCall_ConfigOpStyleForMobileNetSetting>voltesettingscommon,checknonvoltesim,voltesettingOPS</CscFeature_VoiceCall_ConfigOpStyleForMobileNetSetting>
+    <CscFeature_Contact_ConfigOpStyleVariation>XNZ</CscFeature_Contact_ConfigOpStyleVariation>
+    <CscFeature_Settings_Reset_Password>TRUE</CscFeature_Settings_Reset_Password>
+    <CscFeature_Settings_FindMyMobile>TRUE</CscFeature_Settings_FindMyMobile>
+    <CscFeature_VoiceCall_SupportEmergencyCallUsingVolte>TRUE</CscFeature_VoiceCall_SupportEmergencyCallUsingVolte>
+    <CscFeature_VoiceCall_EnableGroupCallMenu>TRUE</CscFeature_VoiceCall_EnableGroupCallMenu>
+    <CscFeature_VoiceCall_ConfigRecording>RecordingAllowedByMenu</CscFeature_VoiceCall_ConfigRecording>
+    <CscFeature_VoiceCall_SupportShowVowifiEndCall>TRUE</CscFeature_VoiceCall_SupportShowVowifiEndCall>
+    <CscFeature_VoiceCall_ConfigOpStyleForHdIcon>XNZ_HD,XNZ_UHD</CscFeature_VoiceCall_ConfigOpStyleForHdIcon>
+    <CscFeature_Contact_EnableLogIconForVoiceRecord>TRUE</CscFeature_Contact_EnableLogIconForVoiceRecord>
+    <CscFeature_Contact_FullCountryPrefixSearchSupport>TRUE</CscFeature_Contact_FullCountryPrefixSearchSupport>
+    <CscFeature_Contact_SupportSIMContacts>TRUE</CscFeature_Contact_SupportSIMContacts>
+    <CscFeature_Contact_EnableDynCallerIdMatchingDigitWithAutoSim>TRUE</CscFeature_Contact_EnableDynCallerIdMatchingDigitWithAutoSim>
+    <CscFeature_Message_SupportUsefulcard>TRUE</CscFeature_Message_SupportUsefulcard>
+    <CscFeature_Message_EnablePhoneNumberFormattingInMsg>TRUE</CscFeature_Message_EnablePhoneNumberFormattingInMsg>
+    <CscFeature_Message_EnableEmailOverSms>TRUE</CscFeature_Message_EnableEmailOverSms>
+    <CscFeature_Message_EnableEditingSenderAddress>TRUE</CscFeature_Message_EnableEditingSenderAddress>
+    <CscFeature_Message_ConfigSpamReport>TRUE</CscFeature_Message_ConfigSpamReport>
+    <CscFeature_Message_ConfigThreadForMultipleDest>TRUE</CscFeature_Message_ConfigThreadForMultipleDest>
+    <CscFeature_Message_EnableAnonymousThread>TRUE</CscFeature_Message_EnableAnonymousThread>
+    <CscFeature_Message_EnableBlackList>TRUE</CscFeature_Message_EnableBlackList>]
+    <CscFeature_Message_EnableContactInfoInBubble>TRUE</CscFeature_Message_EnableContactInfoInBubble>
+    <CscFeature_Message_EnableMmsMobiledataOff>TRUE</CscFeature_Message_EnableMmsMobiledataOff>
+    <CscFeature_Message_EnableMultiCopyToSim>TRUE</CscFeature_Message_EnableMultiCopyToSim>
+    <CscFeature_Message_EnableMultiDraftBox>TRUE</CscFeature_Message_EnableMultiDraftBox>
+    <CscFeature_Message_EnableMultiLockMenu>TRUE</CscFeature_Message_EnableMultiLockMenu>
+    <CscFeature_Message_EnableRegisterToCalender>TRUE</CscFeature_Message_EnableRegisterToCalender>
+    <CscFeature_Message_SupportAutoDeleteSpam>TRUE</CscFeature_Message_SupportAutoDeleteSpam>
+    <CscFeature_Message_EnableScheduledMessage>TRUE</CscFeature_Message_EnableScheduledMessage>
+    <CscFeature_Message_EnableScheduledMsgBox>TRUE</CscFeature_Message_EnableScheduledMsgBox>
+    <CscFeature_Message_EnableSearchByInitialConsonant>TRUE</CscFeature_Message_EnableSearchByInitialConsonant>
+    <CscFeature_Message_EnableVCard>TRUE</CscFeature_Message_EnableVCard>
+    <CscFeature_RIL_SupportLteRoaming>TRUE</CscFeature_RIL_SupportLteRoaming>
+    <CscFeature_RIL_SupportEsim>FALSE</CscFeature_RIL_SupportEsim>
+    <CscFeature_RIL_SupportMptcp>TRUE</CscFeature_RIL_SupportMptcp>
+    <CscFeature_RIL_SupportVolte>TRUE</CscFeature_RIL_SupportVolte>
+    <CscFeature_RIL_DefTimeZoneHandling>Enable</CscFeature_RIL_DefTimeZoneHandling>
+    <CscFeature_RIL_Display4gPlusIconBandwidth>14</CscFeature_RIL_Display4gPlusIconBandwidth>
+    <CscFeature_IMS_EnableVoLTE>TRUE</CscFeature_IMS_EnableVoLTE>
+    <CscFeature_MyFiles_SupportFolderDescription>TRUE</CscFeature_MyFiles_SupportFolderDescription>
+    <CscFeature_Wifi_SupportSecureWifi>TRUE</CscFeature_Wifi_SupportSecureWifi>
   </FeatureSet>
 </SamsungMobileFeature>
