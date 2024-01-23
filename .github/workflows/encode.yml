@@ -42,3 +42,4 @@ jobs:
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             message: "encoded csc and updates"
+            branch: master
